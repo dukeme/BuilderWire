@@ -17,9 +17,6 @@ namespace BuilderWireCodingChallenge_0820
 
             try
             {
-                //articlePath = @"C:\Users\CARL\Desktop\BuilderWireCodingChallenge-0820\Input\Article.txt";
-                //wordPath = @"C:\Users\CARL\Desktop\BuilderWireCodingChallenge-0820\Input\Words.txt";
-
                 Console.Write("Enter article path: ");
                 articlePath = Console.ReadLine();
 
