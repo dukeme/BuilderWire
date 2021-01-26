@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderWireCodingChallenge-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParagraphChecker", "ParagraphChecker\ParagraphChecker.csproj", "{1D9ADDB7-609E-4900-A3BF-407AE37D8131}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParagraphCheckerTests", "ParagraphCheckerTests\ParagraphCheckerTests.csproj", "{078D0E77-9006-40F1-89BE-C7DF7F2BF078}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1D9ADDB7-609E-4900-A3BF-407AE37D8131}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D9ADDB7-609E-4900-A3BF-407AE37D8131}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D9ADDB7-609E-4900-A3BF-407AE37D8131}.Release|Any CPU.Build.0 = Release|Any CPU
+		{078D0E77-9006-40F1-89BE-C7DF7F2BF078}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{078D0E77-9006-40F1-89BE-C7DF7F2BF078}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{078D0E77-9006-40F1-89BE-C7DF7F2BF078}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{078D0E77-9006-40F1-89BE-C7DF7F2BF078}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
