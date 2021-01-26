@@ -126,22 +126,31 @@ namespace ParagraphChecker
                 }
                 else
                 {
-                    if (Utility.IsUpper(wordList[i]) == false
-                        && Utility.IsUpper(wordList[i + 1]) == true) //End of the sentence
+                    try
+                    {
+                        if (Utility.IsUpper(wordList[i]) == false
+                           && Utility.IsUpper(wordList[i + 1]) == true) //End of the sentence
+                        {
+                            sentence += wordList[i].Replace("\r\n", string.Empty) + " ";
+                            sentenceList.Add(sentence);
+                            sentence = string.Empty;
+                        }
+                        else if ((i + 1) == wordList.Count) // Last word in the paragraph
+                        {
+                            sentence += wordList[i].Replace("\r\n", string.Empty) + " ";
+                            sentenceList.Add(sentence);
+                            sentence = string.Empty;
+                        }
+                        else
+                        {
+                            sentence += wordList[i].Replace("\r\n", string.Empty) + " ";
+                        }
+                    }
+                    catch
                     {
                         sentence += wordList[i].Replace("\r\n", string.Empty) + " ";
                         sentenceList.Add(sentence);
                         sentence = string.Empty;
-                    }
-                    else if ((i + 1) == wordList.Count) // Last word in the paragraph
-                    {
-                        sentence += wordList[i].Replace("\r\n", string.Empty) + " ";
-                        sentenceList.Add(sentence);
-                        sentence = string.Empty;
-                    }
-                    else
-                    {
-                        sentence += wordList[i].Replace("\r\n", string.Empty) + " ";
                     }
                 }
             }

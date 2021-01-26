@@ -58,6 +58,16 @@ namespace ParagraphChecker.Tests
         {
             try
             {
+                string articlePath = string.Empty;
+                string wordPath = string.Empty;
+
+                articlePath = @"C:\Users\CARL\Desktop\BuilderWireCodingChallenge-0820\Input\Article.txt";
+                wordPath = @"C:\Users\CARL\Desktop\BuilderWireCodingChallenge-0820\Input\Words.txt";
+
+                ProcessFile pf = new ProcessFile();
+                paragraphText = pf.ReadFile(articlePath);
+                wordsText = pf.ReadFile(wordPath);
+
                 Paragraph paragraph = new Paragraph();
                 string output = paragraph.Parse(paragraphText, wordsText);
             }

@@ -17,14 +17,14 @@ namespace BuilderWireCodingChallenge_0820
 
             try
             {
-                articlePath = @"C:\Users\CARL\Desktop\BuilderWireCodingChallenge-0820\Input\Article.txt";
-                wordPath = @"C:\Users\CARL\Desktop\BuilderWireCodingChallenge-0820\Input\Words.txt";
+                //articlePath = @"C:\Users\CARL\Desktop\BuilderWireCodingChallenge-0820\Input\Article.txt";
+                //wordPath = @"C:\Users\CARL\Desktop\BuilderWireCodingChallenge-0820\Input\Words.txt";
 
                 Console.Write("Enter article path: ");
-                //articlePath = Console.ReadLine();
+                articlePath = Console.ReadLine();
 
                 Console.Write("Enter words path: ");
-                //wordPath = Console.ReadLine();
+                wordPath = Console.ReadLine();
 
                 Console.WriteLine("Processing...");
                 
@@ -49,7 +49,7 @@ namespace BuilderWireCodingChallenge_0820
                     string invalidWords = string.Empty;
                     Console.WriteLine("Invalid word(s):");
 
-                    foreach (string word in paragraph.InvalidWords)
+                    foreach (string word in paragraph.InvalidWords.Distinct())
                     {
                         invalidWords += string.Format("* {0}\n", word);
                     }
